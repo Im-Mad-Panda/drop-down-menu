@@ -1,6 +1,21 @@
+.header {
+  padding: 20px 0;
+height: 50vh;
+  background-color: #212529;
+}
 .nav-list{
+  text-align: center;
   font-size: 0;
   font-family: sans-serif;
+}
+.nav-list > li:nth-child(n + 2) {
+  margin-left: 20px;
+}
+.nav-list a {
+  padding: 20px 20px;
+}
+.nav-list li {
+  position: relative;
 }
 .list-item{
   display: inline-block;
@@ -13,10 +28,8 @@
   color: inherit;
   text-decoration: none;
   background-color: #e64a19;
-  padding: 10px;
   display: inline-block;
   width: 100%;
-  box-sizing: border-box;
   text-align: center;
 }
 .sub-nav-list{
@@ -28,6 +41,21 @@
 }
 .sub-list-item{
   display: block;
+}
+.sub-nav-list a{
+  padding: 15px 10px;
+
+}
+.nav-list li:hover > .dropmenu-property,
+.nav-list li:focus-within > .dropmenu-property {
+  visibility: visible;
+}
+.dropmenu-property{
+  position: relative;
+  padding: 0;
+  left: 156px;
+  top: -48px;
+  visibility: hidden;
 }
 .list-item:hover > .sub-nav-list{
   display: block;
